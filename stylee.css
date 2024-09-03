@@ -1,0 +1,100 @@
+  /* general styles*/
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: blue;
+    background-image:inherit;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*header style*/
+header {
+    background:green;
+    colour: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:blue 3px solid;
+}
+header a {
+    colour:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+/* section style*/
+section {
+    padding: 20px 0;
+}
+#about {
+    background: red;
+    padding: 50px 0;
+}
+#project {
+    background: #fff;
+    padding: 50px 0;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+/*contact section*/
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+#contact input, #contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+#contact button:hover{
+    background: red;
+}
+/*footer styles*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width: 768px){
+    header ul {
+        text-align: center;
+        float: none;
+    }
+    header li {
+        padding: 10px 0;
+        display: block;
+    }
+}
